@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Exercise</title>
+	<style>
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+		.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+		html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+		*, *:before, *:after {box-sizing: inherit}
+
+		.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+		body {
+			background:#F0BDC5;
+			color: #363636;
+			font-family: arial;
+		}
+
+		h1 {
+			color: #daa010;
+			font-size: 50px;
+			margin: 0;
+			text-align: center;
+		}
+
+		h3 {
+			font-style: italic;
+		}
+
+		h4 {
+			color: #6298af;
+		}
+
+		blockquote {
+			font-size: 16px;
+			border-left: 1px solid #daa010;
+			padding-left: 10px;
+		}
+
+		section {
+			margin-bottom: 50px;
+		}
+
+		.wrapper {
+			padding: 50px;
+			margin: 50px auto;
+			max-width: 750px;
+			background: white;
+		}
+
+		/* Advanced Selectors Exercise */
+		/* Use the comments below as a guide, utilizing advanced selectors to write the correct CSS selectors. There may be one or more ways to select a certain element! */
+
+		/* Select all h2s except the one in the section with a class of thank-you. */
+		______	{
+			background: #5b5a59;
+			padding: 10px;
+			color: white;
+			text-align: center;
+		}
+
+		/* Select the img element that is immediately after the h3 */
+		______ {
+			border: 5px solid white;
+			max-width: calc(100% - 10px);
+		}
+
+		/* Select the p elements that follow after the img elements with a class of dish. */
+		______ {
+			color: goldenrod;
+		}
+
+		/* Select all anchor elements that are direct children of p elements. */
+		______ {
+			color: goldenrod;
+		}
+
+		/* Select the first section in the wrapper (there are different ways to do this) */
+		______ {
+			background: #d2ebf7;
+			padding: 20px;
+		}
+
+		/* Select the first letter of all p elements in the section with a class of dishes. */
+		______ {
+			font-size: 25px;
+			font-family: cursive;
+		}
+
+		.dishes img {
+			margin-right: 12px;
+		}
+
+		/* Select the last image in the section with a class of dishes(there are different ways to do this) */
+		______ {
+			margin-right: 0;
+		}
+
+		/* Select all the anchor elements whose href properties contain the value of "Avocado". */
+		______ {
+			color: #558303;
+		}
+
+		.testimonial cite {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+
+		/* Select the div with the class of testimonial and the class of employee. */
+		______ {
+			border: 2px dashed goldenrod;
+			padding: 20px;
+		}
+
+		/* Select the h4 inside the first div with a class of testimonial.*/
+		______ {
+			font-size: 20px;
+			color: darkslateblue;
+		}
+
+		/* Select the second div with a class of testimonial. */
+		______ {
+			margin: 60px 0;
+		}
+
+		/* Select the first line of the p element in the last testimonial. */
+		______ {
+			font-size: 20px;
+		}
+
+		/* Select the input of type checkbox when the input is checked, have the h2 with class of thank-you selected below. */
+		______ {
+			color: white;
+			background-color: goldenrod;
+			padding: 25px;
+			border: 5px dashed #d2ebf7;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<header>
+			<!-- headings -->
+			<h1>Banana Bananza</h1>
+			<h2>Vitamin C rich, potassium filled deliciousness.</h2>
+		</header>
+		<main>
+			<!-- description -->
+			<section>
+				<h3>What about apples? Bananas is where it's at..</h3>
+				<img src="https://hychalknotes.s3.amazonaws.com/Webp.net-resizeimage-4.jpg" alt="Banana on a pink backdrop.">
+				<p><strong>Bananas</strong> : moon shaped botanical fruit, but guess what, it's also a <em>berry</em>! In some countries Bananas made for cooking are called plantains. To distinguish from dessert Bananas.</p>
+				<p>Founded by a monkey somewhere eating these delicious fruits of the world, they are slightly radioactive, because they contain potassium. Still safe to eat, still safe to be around!  <strong>That's <a href="https://en.wikipedia.org/wiki/Banana" target="_blank">Bananas</a>.</strong></p>
+			</section><!-- end of description -->
+
+			<!-- dishes -->
+			<section class="dishes">
+				<h2>Banana Dishes</h2>
+				<p>Bananas I tell you right now, they are special and you don't even know it.</p>
+				<img class="dish" src="https://hychalknotes.s3.amazonaws.com/Webp.net-resizeimage-1.jpg" alt="Dried fruits dipped in chocolate.">
+				<img class="dish" src="https://hychalknotes.s3.amazonaws.com/Webp.net-resizeimage-2.jpg" alt="Bright yellow banana smoothie with a chocolate palm tree inside.">
+				<img class="dish" src="https://hychalknotes.s3.amazonaws.com/Webp.net-resizeimage-3.jpg" alt="Banana and strawberry parfait on a wooden tray.">
+				<img class="dish" src="https://hychalknotes.s3.amazonaws.com/Webp.net-resizeimage.jpg" alt="Strawberry and banana pancakes stacked with whipcream, topped with a flower.">
+				<p>You love them! Bananas can be eaten in so many different ways! Get creative!</p>
+				<p>The best thing about them is that they are versatile!!</p>
+			</section><!-- end of dishes -->
+
+			<!-- testimonials -->
+			<section class="testimonials">
+				<h2>Testimonials</h2>
+				<!-- tests -->
+				<div class="tests">
+					<!-- testimonial -->
+					<div class="testimonial">
+						<h4>What People Say About Us: </h4>
+						<blockquote>
+							<p>"One time I had an <a href="https://en.wikipedia.org/wiki/Avocado">Avocado</a>, and I also had a Banana, and I put them near each other. I thought my Avocado would ripen 2 to 3 days later, but the next day, my Avocado was ripe! My Banana sped up the rippening process of my Avocado!"</p>
+						</blockquote>
+						<cite class="author">Mariam Syed</cite>
+					</div><!-- end of testimonial 1 -->
+					<!-- testimonial -->
+					<div class="testimonial employee">
+						<h4>Past Banana Bananza Employee: </h4>
+						<blockquote>
+							<p>"Oh yeah we get those <a href="https://en.wikipedia.org/wiki/Avocado">Avocados</a> all the time. It's too difficult to not love bananas with them they make a great smoothie you know?"</p>
+						</blockquote>
+						<cite class="author">Reyna Dimara</cite>
+					</div><!-- end of testimonial 2 -->
+					<!-- testimonial -->
+					<div class="testimonial">
+						<h4>Past Banana Bananaza Customer: </h4>
+						<blockquote>
+							<p>"Honestly they are super sweet, and I put them in everything I eat to add some sugar in there you know? Smoothies, <a href="https://en.wikipedia.org/wiki/Oatmeal">oatmeal</a>, rice, pasta, bread, anywhere you want just throw them in for some delicious good times."</p>
+						</blockquote>
+						<cite class="author">Shoo Huang</cite>
+					</div><!-- end of testimonial 3 -->
+				</div><!-- end of tests -->
+			</section><!--end of testimonials-->
+
+			<!-- bonus exercise: thanks -->
+			<section class="thanks">
+				<label for="thank">Had a good time?</label>
+				<input type="checkbox" id="thank" name="thank">
+
+				<h2 class="thank-you">Thank you for visiting Banana Bananaza</h2>
+			</section><!-- end of thanks -->
+		</main>
+	</div><!--end of wrapper-->
+</body>
+</html>
